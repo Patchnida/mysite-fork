@@ -1,1 +1,190 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Personal Page</title>
+
+  <style>
+    :root {
+      --bg: #f7f8fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #6366f1;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 48px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #a5b4fc, #6366f1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .btn.primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(99,102,241,0.35);
+    }
+
+    .btn.secondary {
+      background: #eef2ff;
+      color: var(--primary);
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="avatar">Y</div>
+      <h1>Hi, I'm Your Name 👋</h1>
+      <p class="subtitle">
+        I’m a creative developer who enjoys building simple, meaningful things.
+      </p>
+
+      <div class="actions">
+        <a href="#" class="btn primary">Contact Me</a>
+        <a href="#" class="btn secondary">View Portfolio</a>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I enjoy working on projects that are friendly, useful, and easy to understand.
+          I care about clean design, good user experience, and continuous learning.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>What I Work With</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">UI Design</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Learning ✨</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Your Name — nice to meet you :)
+    </footer>
+
+  </div>
+
+</body>
+</html>
